@@ -1,0 +1,83 @@
+
+* {
+  /*border: 1px solid red;*/
+}
+
+body {
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  font-family: 'Beth Ellen';
+  
+}
+
+h1 span {
+  color: #ff5563;
+}
+
+p {
+  font-size: 1.25rem;
+  margin-bottom: 4.5rem;
+}
+
+a {
+  color: #ffffff;
+  background-color: #ff5563;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+
+  transition: background-color 300ms;
+}
+
+a:hover {
+  background-color: #ec1b2d;
+}
+
+#bg-image{
+  background-image: url("../assets/sushi.jpeg");
+  background-position: center;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  inset: 0;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+@media (width < 40rem) {
+  html{
+    font-size: 70%;
+  }
+}
+
+h1, p, a {
+  animation: apper 1s backwards;
+}
+
+h1 {
+  animation-delay: 0.2s;
+}
+
+p {
+  animation-delay: 0.8s;
+}
+
+a {
+  animation-delay: 1.6s;
+}
+
+@keyframes apper{
+  0%{
+    opacity: 0;
+  }
+}
